@@ -51,7 +51,7 @@ namespace Toolbox.Editor
         List<SerializedType> TargetTypeDrawerHandlers { get; }
     }
 
-    [CreateAssetMenu(fileName = "Editor Toolbox Settings", menuName = "Editor Toolbox/Settings")]
+    [CreateAssetMenu(fileName = "Editor Extension Settings", menuName = "Editor Extension/Settings", order = 1000)]
     internal class ToolboxEditorSettings : ScriptableObject, IToolboxGeneralSettings, IToolboxHierarchySettings, IToolboxProjectSettings, IToolboxInspectorSettings
     {
         [SerializeField]
